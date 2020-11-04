@@ -17,3 +17,12 @@ creating a github account
 	-> git push origin master
 
 Note: this master can be anything->creating a pull request.
+
+Delete files/folders:-
+
+->git checkout master
+->git rm -r <folder name>
+or
+->git rm <file1><fil2>....
+->git commit -m "remove folder"
+->git push origin master
