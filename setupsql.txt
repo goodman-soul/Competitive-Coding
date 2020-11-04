@@ -1,0 +1,14 @@
+This setup is for mysql server in ubuntu
+
+https://dev.mysql.com/downloads/mysql/
+
+-> select linux-generic/Ubuntu Linux
+-> select OS version All
+
+-> install mysql comminity server
+
+-> sudo sql to start the server
+
+-> sudo -u root -p
+
+> password-> ***(anything)
