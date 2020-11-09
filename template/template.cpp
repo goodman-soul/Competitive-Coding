@@ -4,18 +4,24 @@ using namespace std;
 //integers
 #define ll long long int
 
-//IO
-#define I(X) scanf("%d",&X) //input integer
-#define P(X) printf("%d",X) //output integer
+//take input
+void I(int& X){scanf("%d",&X);}
+void I(ll& X){scanf("%lld",&X);};
+void I(float& X){cin>>X;}
+void I(vector<int>& X){for(int i=0;i<X.size();i++)scanf("%d",&X[i]);}
+void I(vector<ll>& X){for(int i=0;i<X.size();i++)scanf("%lld",&X[i]);}
+void I(vector<float>& X){for(int i=0;i<X.size();i++)cin>>X[i];}
 
-#define E "\n"
-//loop
-#define FOR(i,n) for(int i=0;i<=n;i++)
-//stl
-#define v(type) vector<type>
-#define p(type1,type2) pair<type1,type2>
-#define map(type1,type2) unordered_map<type1,type2>
-#define x (x.begin(),x.end()) 
+//printing ouput
+void P(int X){printf("%d",X);}
+void P(ll X){printf("%lld",X);}
+void P(float X){cout<<X;}
+void P(vector<int> X){for(auto it:X)printf("%d",it);}
+void P(vector<ll> X){for(auto it:X)printf("%lld",it);}
+void P(vector<float> X){for(auto it:X)cout<<it<<endl;}
+
+string lower(string X){string a="";for(int i=0;i<X.size();i++)a+=tolower(X[i]); return a;}
+string uppper(string X){string a="";for(int i=0;i<X.size();i++)a+=toupper(X[i]);return a;}
 
 //bit manipulation
 #define setbits(x) __builtin_popcount(x)
@@ -26,9 +32,6 @@ using namespace std;
 
 //debug
 void debug(){cout<<"Shit Life"<<E;}
-#define clockSpeed 1e8
-void timeT(){cerr<<"time taken "<<(float)clock()/clockSpeed<<" secs\n";}
-
 void solve(){
     //cout<<setbits(3)<<endl; 
     
@@ -36,14 +39,11 @@ void solve(){
 int main()
 {
     //faster I/O in case using cin, cout
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(NULL);
     int test=1;
     I(test);
     while(test--){
         solve();
     }
-    //tell the time
-    //cout<<CLOCKS_PER_SEC<<endl; -> or use this
-    timeT();
 }
