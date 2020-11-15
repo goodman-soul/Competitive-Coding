@@ -64,8 +64,7 @@ inline string uppercase(string s){int n=s.size();for(int i=0;i<n;i++){if(s[i]>='
 	}
 	if(flag==true){v[x][y]*=-1;v[x+1][y]*=-1;}
 }*/
-int n,m;
-void solve(){
+/*void solve(){
 	//int n,m;
 	I(n);I(m);
 	//ll val=0;
@@ -102,9 +101,25 @@ void solve(){
 		}
 			
 	sum=0;
-	for(int i=0;i<m;i++)sum+=col[i];
-	cout<<max(ans,sum)<<endl;
+	
+}*/
+int n,m;
+void solve(){
+	I(n);I(m);
+	vector<vector<int>>v(n,vector<int>(m));
+	ll sum=0,ans=INFF;int x=0;
+	FORD(i,0,n-1)FORD(j,0,m-1){
+		cin>>v[i][j];
+		if(v[i][j]<0)x++;
+		ll y=abs(v[i][j]);
+		sum+=y;
+		if(ans>y)ans=y;
+	}
+	if(x==0)P(sum);
+	else if(x%2==0)P(sum);
+	else{ll a=sum-ans-ans;P(a);}
 }
+	
 int main()
 {
 	int test;
