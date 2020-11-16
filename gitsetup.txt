@@ -26,3 +26,8 @@ or
 ->git rm <file1><fil2>....
 ->git commit -m "remove folder"
 ->git push origin master
+
+
+-> if face some problems-> something like (git pull ....)
+simply do git pull.. 
+then try to push it again.
