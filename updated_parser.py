@@ -43,6 +43,8 @@ def createDirectory(data):
             print("Template file doesnot exists")
             print("A blanck file has been created")
             f.write(minimal_template)
+        except:
+            print("Fuck nothing found")
         f.close()
     #creating input output file
     file_input_base=problem_dir+'/input'
