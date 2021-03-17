@@ -144,3 +144,27 @@ for(int i=1;i<n;i++){
 // to k -> two pointer approach
 // ----------------------------------->
 // int left=0,right=n-1;
+
+2D Arrays->
+// ---------------
+// 2 dimentional-> matrix
+<data type> a[rows][cols];
+// storage-> as linear array first row then second row..
+// a[3][4]-> by default garbage value
+
+
+// problems->
+-------------------
+// 1. matrix wave pattern printing
+// input : 1 4 7 10
+     //    2 5 8 11
+     //    3 6 9 12
+// output: 1 2 3 6 5 4 7 8 9 12 11 10
+
+// 2. spiral print of 2D array
+// 3. Rotate Image(Leetcode) space complexity-> O(1)
+// -> reverse all the rows and then transpose
+
+// 4. search in row and col wise sorted array(stair case search)
+
+// 2D character array-> each node contains a string
